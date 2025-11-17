@@ -1,0 +1,129 @@
+header {
+  color: white;
+  background-color: rgb(13, 20, 119);
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  display: block;
+  margin: auto;
+}
+
+nav {
+  background-color: rgb(128, 11, 11);
+  text-align: center;
+  font-size: 18px;
+  padding: 18px;
+}
+
+nav a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 28px;
+  color: white;
+  margin: 10px;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+/* Article */
+#article {
+  font-size: 18px;
+}
+
+article {
+  text-align: left;
+  margin: 36px;
+  font-size:21px;
+}
+
+/*Paragraphe*/
+p {
+  margin: 20px 50px;
+  text-align: left;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+/*Images*/
+img {
+  padding-top: 16px;
+  max-width: 100%;
+  height: auto;
+  margin:8px;
+}
+
+#histoire img,
+#campnou img,
+#adresses img,
+#flex img #contact img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(128, 11, 11);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+footer h1,
+footer h2 {
+  color: white;
+  font-size: 18px;
+}
+
+footer img {
+  margin: 5px;
+  text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 780px) {
+  .flex {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+/* Formulaire */
+
+.form {
+  text-align: column;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
