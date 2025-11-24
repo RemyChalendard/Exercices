@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 header {
   color: white;
   background-color: rgb(13, 20, 119);
@@ -31,8 +35,7 @@ h1 {
 
 h2 {
   color: black;
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 23px;
   text-align: center;
   font-weight: bold;
   margin-top: 30px;
@@ -41,7 +44,6 @@ h2 {
 .flex {
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
 body {
@@ -49,19 +51,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  padding-bottom: 20px;
-}
-
 /* Article */
-#article {
+.news {
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  gap:20%;
   font-size: 18px;
-}
-
-article {
-  text-align: left;
-  margin: 36px;
-  font-size:21px;
+  /* TODO mettre du gap sur le conteneur flex */
 }
 
 /*Paragraphe*/
@@ -76,38 +73,44 @@ strong {
 
 /*Images*/
 img {
-  padding-top: 16px;
   max-width: 100%;
-  height: auto;
-  margin:8px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  margin: 12px;
+  padding-right:10px;
 }
 
-#histoire img,
-#campnou img,
-#adresses img,
+.news img, .article img,
 #flex img #contact img {
   display: block;
   margin: 0 auto;
-  border-radius: 15px;
+
 }
+
+
 
 /*Footer*/
 footer {
   background-color: rgb(128, 11, 11);
-  text-align: center;
-  color: white;
   padding: 20px;
 }
 
-footer h1,
-footer h2 {
+h3 {
   color: white;
-  font-size: 18px;
 }
 
-footer img {
-  margin: 5px;
-  text-align: center;
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.socials img {
+  display: block;
 }
 
 /*Media Queries*/
@@ -116,14 +119,64 @@ footer img {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin: 10px;
   }
 }
 
 /* Formulaire */
+h6 {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  text-decoration: underline;
+  background-color: rgb(13, 20, 119);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+}
 
-.form {
-  text-align: column;
+.contact {
+  text-align: center;
+}
+
+.contact-form {
+  background-color: rgb(128, 11, 11);
+  padding-top: 16px;
+  border-color: rgb(13, 20, 119);
+  border-radius: 12px;
+  border-style: solid;
+  margin-bottom: 16px;
+}
+
+.contact-form__label {
   display: flex;
   flex-direction: column;
-  padding: 18px;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding-top: 6px;
+  text-decoration: underline;
+  font-size: 18px;
+  margin: 8px;
+}
+
+.form_send {
+  padding-bottom: 12px;
+  margin: 12px;
+}
+
+.form_message {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*Formulaire arriere plan*/
+.form_background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(images/06_LFP13_Athletic_Club_Web_Hero_Tornem_a_Casa_3200x2000_01_CAT_-1x.webp);
+  background-size: cover;
+  background-position: center;
 }
